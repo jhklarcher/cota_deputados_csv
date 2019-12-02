@@ -1,5 +1,5 @@
 # Cota Parlamentar em CSV
-Script em bash para baixar os ~gastos dos parlamentares da Câmara dos Deputados~ (dados da cota parlamentar) atualizados em CSV. 
+Script em bash para baixar os **gastos dos parlamentares da Câmara dos Deputados** (dados da cota parlamentar) atualizados em CSV. 
 
 ## Execução do script
 
