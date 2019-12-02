@@ -1,6 +1,5 @@
 # Cota Parlamentar em CSV
-Script em bash para baixar os gastos dos parlamentares da Câmara dos Deputados (dados da cota parlamentar) atualizados em CSV. 
-
+Script em bash para baixar os *gastos dos parlamentares da Câmara dos Deputados* (dados da cota parlamentar) atualizados em CSV. 
 
 ## Execução do script
 
@@ -13,3 +12,7 @@ Esse script baixa os dados do site da [Câmara de Deputados](https://www2.camara
 As funções ficam no arquivo "function.sh" e o arquivo "main.sh" executa o processo. O output é um arquivo "data.csv", no diretório "data". Os arquivos XML e ZIP ficam no diretório também, mas podem ser deletados em seguida.
 
 As partes do código que executam as funções para os anos mais antigos estão comentadas, pois o arquivo é muito grande. Se você quiser executar essa parte é só tirar o "#". Vaiai demorar consideravelmente mais para executar o script.
+
+## Comentário
+
+Se você só quer os dados atuais sem ter que baixar todos os arquivos e executar o script, pode usar o [brasil.io](https://brasil.io/dataset/gastos-deputados/cota_parlamentar).
