@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#Função para criar os cabeçalhos
 headers() {
 
 echo "nomeParlamentar,\
@@ -36,6 +37,7 @@ urlDocumento" > data.csv
 
 }
 
+# Função que faz o parsing do xml para o csv
 data_to_csv() {
 	
 grep -e \<nomeParlamentar\> \
@@ -69,9 +71,7 @@ grep -e \<nomeParlamentar\> \
 -e \<numeroDeputadoID\> \
 -e \<idDocumento\> \
 -e \<urlDocumento\> $1 | \
-sed 's/<[^>]*>//g' | \
-sed 's/				//g' | \
-#awk '{ print $0 }' | \
+sed "s/<[^>]*>//g; s/,//g; s/				//g" | \
 paste -d "," - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - >> data.csv
 
 }
