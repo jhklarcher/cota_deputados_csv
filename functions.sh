@@ -71,7 +71,7 @@ grep -e \<nomeParlamentar\> \
 -e \<numeroDeputadoID\> \
 -e \<idDocumento\> \
 -e \<urlDocumento\> $1 | \
-sed "s/<[^>]*>//g; s/,//g; s/				//g" | \
+sed "s/[<,\t\{4\}][^>]*>//g" | \
 paste -d "," - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - >> data.csv
 
 }
